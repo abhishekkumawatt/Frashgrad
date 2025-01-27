@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from "react";
 import Header from '../common/Header/Header'
 import Footer from '../common/Footer/Footer'
 import { Link } from 'react-router-dom';
@@ -61,11 +61,11 @@ const ContactUs = () => {
                                     <div class="tabs_item current">
                                         <ul class="accordion">
                                             <li class="accordion-item p-3">
-                                                <Link class="accordion-title active" to="javascript:void(0)">
+                                                <Link class="accordion-title " to="javascript:void(0)">
                                                     <i class="ri-add-fill"></i>
                                                     How do we create course content?
                                                 </Link>
-                                                <div class="accordion-content show">
+                                                <div class="accordion-content ">
                                                     <p>
                                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam
                                                         nonummy nibh sed
@@ -79,11 +79,11 @@ const ContactUs = () => {
                                                 </div>
                                             </li>
                                             <li class="accordion-item p-3">
-                                                <Link class="accordion-title" to="javascript:void(0)">
+                                                <Link class="accordion-title active" to="javascript:void(0)">
                                                     <i class="ri-add-fill"></i>
                                                     How can i manage my account?
                                                 </Link>
-                                                <div class="accordion-content">
+                                                <div class="accordion-content show">
                                                     <p>
                                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam
                                                         nonummy nibh sed

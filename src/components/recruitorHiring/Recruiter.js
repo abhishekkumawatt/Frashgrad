@@ -1,7 +1,9 @@
 import React from 'react'
 import Header from '../common/Header/Header'
-import Footer from '../common/Footer/Footer'
+// import Footer from '../common/Footer/Footer'
 import { Link } from 'react-router-dom';
+import login_2_gif from '../../assets/images/login_2.gif';
+import loginbottom from '../../assets/images/login-bottom.png';  
 
 const Recruiter = () => {
   return (
@@ -14,13 +16,13 @@ const Recruiter = () => {
             <div class="row">
                 <div class="col-lg-6 p-0 d-none d-md-block d-lg-block">
                     <div class="user_login">
-                        <img src="assets/images/login_2.gif" class="imgk-fluid w-100" alt="login-banner" />
+                        <img src={login_2_gif} class="imgk-fluid w-100" alt="login-banner" />
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex p-0">
                     <div class="user-all-form userlogin position-relative">
                         <div class="login_bottom">
-                            <img src="assets/images/login-bottom.png" alt="" />
+                            <img src={loginbottom} alt="" />
                         </div>
                         <div class="contact-form m-0 py-0">
                             {/* <!-- <img src="assets/images/logos/logo-full.png" class="logo_login rounded-pill" alt="Logo"> --> */}
@@ -161,7 +163,7 @@ const Recruiter = () => {
             </div>
         </div>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   )
 }
